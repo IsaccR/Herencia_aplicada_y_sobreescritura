@@ -11,6 +11,7 @@ import HerenciaAplicada.ejercicio05.Gerente;
 import HerenciaAplicada.ejercicio06.Animal;
 import HerenciaAplicada.ejercicio06.Perro;
 import HerenciaAplicada.ejercicio07.Moto;
+import HerenciaAplicada.ejercicio08.Rectangulo;
 
 //EJERCICIO 1
 public class Principal {
@@ -106,6 +107,14 @@ public class Principal {
  
  Moto miMoto = new Moto("Pulsar", 90, 135);
  miMoto.mostrarInfo();
+ 
+// EJERCICIO 8
+ System.out.println("\n EJERCICIO 8: FIGURA Y RECTÁNGULO ");
+ 
+ Rectangulo rect = new Rectangulo(10, 5);
+ rect.mostrarInfo();
+ 
+ 
  }
 }
 
