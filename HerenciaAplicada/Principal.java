@@ -10,7 +10,7 @@ import HerenciaAplicada.ejercicio05.Empleado;
 import HerenciaAplicada.ejercicio05.Gerente;
 import HerenciaAplicada.ejercicio06.Animal;
 import HerenciaAplicada.ejercicio06.Perro;
-
+import HerenciaAplicada.ejercicio07.Moto;
 
 //EJERCICIO 1
 public class Principal {
@@ -101,7 +101,11 @@ public class Principal {
  Perro miPerro = new Perro("Perro", "Isaac");
  miPerro.hacerSonido();
  
+// EJERCICIO 7
+ System.out.println("\n EJERCICIO 7: VEHÍCULO Y MOTO ");
  
+ Moto miMoto = new Moto("Pulsar", 90, 135);
+ miMoto.mostrarInfo();
  }
 }
 
