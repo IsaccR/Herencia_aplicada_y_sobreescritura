@@ -6,6 +6,8 @@ import HerenciaAplicada.ejercicio01.Estudiante;
 import HerenciaAplicada.ejercicio02.CuentaCorriente;
 import HerenciaAplicada.ejercicio03.ProductoPerecedero;
 import HerenciaAplicada.ejercicio04.Bus;
+import HerenciaAplicada.ejercicio05.Empleado;
+import HerenciaAplicada.ejercicio05.Gerente;
 
 
 //EJERCICIO 1
@@ -74,6 +76,17 @@ public class Principal {
  
  Bus busEscolar = new Bus(20, "Recorrido Municipios");
  busEscolar.descripcion();
+ 
+//EJERCICIO 5
+ System.out.println("\n EJERCICIO 5: EMPLEADO Y GERENTE ");
+ 
+ Empleado emp = new Empleado("Ana Martinez", 5000.00);
+ emp.mostrarInfo();
+ 
+ System.out.println("-------------------------");
+ 
+ Gerente ger = new Gerente("Luis Perez", 8000.00, 2500.00);
+ ger.mostrarInfo();
  
  }
 }
