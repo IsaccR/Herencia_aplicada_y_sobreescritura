@@ -8,6 +8,8 @@ import HerenciaAplicada.ejercicio03.ProductoPerecedero;
 import HerenciaAplicada.ejercicio04.Bus;
 import HerenciaAplicada.ejercicio05.Empleado;
 import HerenciaAplicada.ejercicio05.Gerente;
+import HerenciaAplicada.ejercicio06.Animal;
+import HerenciaAplicada.ejercicio06.Perro;
 
 
 //EJERCICIO 1
@@ -87,6 +89,18 @@ public class Principal {
  
  Gerente ger = new Gerente("Luis Perez", 8000.00, 2500.00);
  ger.mostrarInfo();
+ 
+  //EJERCICIO 6
+ System.out.println("\n EJERCICIO 6: ANIMAL Y PERRO ");
+ 
+ Animal animalGenerico = new Animal("Ser vivo");
+ animalGenerico.hacerSonido();
+ 
+ System.out.println("-------------------------");
+ 
+ Perro miPerro = new Perro("Perro", "Isaac");
+ miPerro.hacerSonido();
+ 
  
  }
 }
