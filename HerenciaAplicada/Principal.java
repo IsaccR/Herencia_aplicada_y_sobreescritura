@@ -1,12 +1,14 @@
 package HerenciaAplicada;
 
-//EJERCICIO 1
 
 import HerenciaAplicada.ejercicio01.Docente;
 import HerenciaAplicada.ejercicio01.Estudiante;
 import HerenciaAplicada.ejercicio02.CuentaCorriente;
 import HerenciaAplicada.ejercicio03.ProductoPerecedero;
+import HerenciaAplicada.ejercicio04.Bus;
 
+
+//EJERCICIO 1
 public class Principal {
  public static void main(String[] args) {
      
@@ -61,6 +63,18 @@ public class Principal {
  
  ProductoPerecedero pan = new ProductoPerecedero("Pan de Caja", 22.00, 0);
  pan.mostrarInfo();
+ 
+    //EJERCICIO 4
+ System.out.println("\n EJERCICIO 4: TRANSPORTE Y BUS ");
+ 
+ Bus busUrbano = new Bus(45, "Ruta 10 - Centro Jutiapa");
+ busUrbano.descripcion();
+ 
+ System.out.println("-------------------------");
+ 
+ Bus busEscolar = new Bus(20, "Recorrido Municipios");
+ busEscolar.descripcion();
+ 
  }
 }
 
