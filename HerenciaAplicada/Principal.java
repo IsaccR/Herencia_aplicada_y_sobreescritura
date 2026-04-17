@@ -5,6 +5,7 @@ package HerenciaAplicada;
 import HerenciaAplicada.ejercicio01.Docente;
 import HerenciaAplicada.ejercicio01.Estudiante;
 import HerenciaAplicada.ejercicio02.CuentaCorriente;
+import HerenciaAplicada.ejercicio03.ProductoPerecedero;
 
 public class Principal {
  public static void main(String[] args) {
@@ -47,6 +48,19 @@ public class Principal {
  
  System.out.print("Retirando $100 (Debe fallar): ");
  miCuenta.retirar(100);
+ 
+   
+ //EJERCICIO 3
+ System.out.println("\nEJERCICIO 3: PRODUCTO PERECEDERO ");
+ 
+ 
+ ProductoPerecedero leche = new ProductoPerecedero("Leche Entera", 15.50, 5);
+ leche.mostrarInfo();
+ 
+ System.out.println("-------------------------");
+ 
+ ProductoPerecedero pan = new ProductoPerecedero("Pan de Caja", 22.00, 0);
+ pan.mostrarInfo();
  }
 }
 
