@@ -12,6 +12,7 @@ import HerenciaAplicada.ejercicio06.Animal;
 import HerenciaAplicada.ejercicio06.Perro;
 import HerenciaAplicada.ejercicio07.Moto;
 import HerenciaAplicada.ejercicio08.Rectangulo;
+import HerenciaAplicada.ejercicio09.LibroDigital;
 
 //EJERCICIO 1
 public class Principal {
@@ -113,6 +114,17 @@ public class Principal {
  
  Rectangulo rect = new Rectangulo(10, 5);
  rect.mostrarInfo();
+ 
+// PRUEBA EJERCICIO 9
+ System.out.println("\n EJERCICIO 9: LIBRO Y LIBRO DIGITAL ");
+ 
+ LibroDigital libro1 = new LibroDigital("El Quijote", "Miguel de Cervantes", 4.5);
+ libro1.mostrarInfo();
+ 
+ System.out.println("-------------------------");
+ 
+ LibroDigital libro2 = new LibroDigital("Palabras que nuca dije ", "Pablo Sznajdleder", 12.8);
+ libro2.mostrarInfo();
  
  
  }
