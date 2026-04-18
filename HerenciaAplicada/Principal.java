@@ -13,6 +13,7 @@ import HerenciaAplicada.ejercicio06.Perro;
 import HerenciaAplicada.ejercicio07.Moto;
 import HerenciaAplicada.ejercicio08.Rectangulo;
 import HerenciaAplicada.ejercicio09.LibroDigital;
+import HerenciaAplicada.ejercicio10_facturacion.*;
 
 //EJERCICIO 1
 public class Principal {
@@ -126,7 +127,20 @@ public class Principal {
  LibroDigital libro2 = new LibroDigital("Palabras que nuca dije ", "Pablo Sznajdleder", 12.8);
  libro2.mostrarInfo();
  
+// EJERCICIO 10
+ System.out.println("\n EJERCICIO 10: SISTEMA DE FACTURACIÓN ");
  
+ Cliente miCliente = new Cliente("David ", "1234567-8");
+ 
+ System.out.println(" Generando Factura al Contado...");
+ FacturaContado fc = new FacturaContado(101, miCliente, 500.00, 50.00);
+ fc.mostrarFactura();
+ 
+ System.out.println("-------------------------");
+ 
+ System.out.println(" Generando Factura al Crédito...");
+ FacturaCredito fr = new FacturaCredito(102, miCliente, 1000.00, 100.00, 3);
+ fr.mostrarFactura();
  }
 }
 
